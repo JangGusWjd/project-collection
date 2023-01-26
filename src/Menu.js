@@ -49,6 +49,9 @@ const Menu = () => {
               <StyledLink to="/">Home</StyledLink>
             </li>
             <li>
+              <StyledLink to="/toy-project">TOY PROJECT</StyledLink>
+            </li>
+            <li>
               <StyledLink to="/diary">Diary</StyledLink>
             </li>
             <li>

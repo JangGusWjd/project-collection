@@ -20,15 +20,15 @@ const Home = () => {
           <ul className="address-zip">
             <li>
               <FaGithub />
-              <span>Github:</span>
+              <span>Github: https://github.com/JangGusWjd</span>
             </li>
             <li>
               <MdEmail />
-              <span>E-mail: </span>
+              <span>E-mail: jjanghj3624@gmail.com</span>
             </li>
             <li>
               <FaBloggerB />
-              <span>Tistory Blog: </span>
+              <span>Tistory Blog: https://itguswjd.tistory.com/</span>
             </li>
           </ul>
         </div>
