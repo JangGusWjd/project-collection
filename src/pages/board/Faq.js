@@ -30,7 +30,7 @@ const qnaList = [
 ];
 
 const Faq = () => {
-  const [showList, setShowList] = useState(qnaList);
+  // const [showList, setShowList] = useState(qnaList);
   const [visible, setVisible] = useState(qnaList);
 
   const getQna = (item, index) => {
@@ -58,7 +58,7 @@ const Faq = () => {
       {/* <section className="faq-container"> */}
       <h2>FAQ</h2>
       <span>Most frequent questions and answers</span>
-      {showList.map((item, index) => getQna(item, index))}
+      {qnaList.map((item, index) => getQna(item, index))}
       {/* </section> */}
     </div>
   );

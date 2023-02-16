@@ -13,11 +13,15 @@ const ToyHome = () => {
       <div className="ToyHome-Menu">
         <ul>
           <StyledLink to="/toy-project/instagram-post">
-            <li>instagram</li>
+            <li>Instagram Post</li>
           </StyledLink>
-          <li>Toy Project 2</li>
-          <li>Toy Project 3</li>
-          <li>Toy Project 4</li>
+          <StyledLink to="/toy-project/todo">
+            <li>Todo List</li>
+          </StyledLink>
+          <li>직원 출퇴근 관리</li>
+          <StyledLink to="/toy-project/sports-challenge">
+            <li>Sports Challenge</li>
+          </StyledLink>
           <li>Toy Project 5</li>
         </ul>
       </div>

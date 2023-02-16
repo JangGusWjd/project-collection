@@ -1,0 +1,37 @@
+.sports-menu-bar {
+  width: 100%;
+  height: 5vh;
+  background: rgb(237, 237, 237);
+  display: flex;
+  justify-content: space-between;
+
+  .sports-menu-bar-logo {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .sports-logo {
+      width: 100%;
+      height: 80%;
+    }
+  }
+
+  .sports-menu-bar-title {
+    // width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: rgb(83, 149, 255);
+    margin-left: 3rem;
+  }
+
+  .sports-menus {
+    // width: 20%;
+    height: 100%;
+    display: flex;
+  }
+}

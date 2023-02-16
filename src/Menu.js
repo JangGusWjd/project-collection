@@ -57,9 +57,7 @@ const Menu = () => {
             <li>
               <StyledLink to="/bucket">Bucket List</StyledLink>
             </li>
-            <li>
-              <StyledLink to="/todo">Todo List</StyledLink>
-            </li>
+            <li>Todo List</li>
             <li>
               <StyledLink to="/question">
                 <RiQuestionAnswerLine className="board-logo" />

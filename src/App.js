@@ -10,6 +10,7 @@ import Register from "./pages/Register";
 import ToyHome from "./pages/toy-project/ToyHome";
 // import AsideMenu from "./pages/toy-project/AsideMenu";
 import Instagram from "./pages/toy-project/Instagram";
+import Sports from "./pages/sports/Sports";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
           />
           <Route path="/diary" element={<Diary />} />
           <Route path="/bucket" element={<Bucket />} />
-          <Route path="/todo" element={<Todo />} />
+          <Route path="/toy-project/todo" element={<Todo />} />
+          <Route path="/toy-project/sports-challenge/*" element={<Sports />} />
           <Route path="/question" element={<Board />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
