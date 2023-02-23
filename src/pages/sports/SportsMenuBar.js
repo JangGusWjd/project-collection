@@ -10,7 +10,7 @@ const StyledLi = styled.li`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 800;
 
   &:hover {
@@ -30,12 +30,10 @@ const SportsMenuBar = () => {
         </div>
         <ul className="sports-menus">
           <StyledLi>
-            <StyledLink to="/toy-project/sports-challenge">홈</StyledLink>
+            <StyledLink to="">홈</StyledLink>
           </StyledLi>
           <StyledLi>
-            <StyledLink to="/toy-project/sports-challenge/history">
-              히스토리
-            </StyledLink>
+            <StyledLink to="history">히스토리</StyledLink>
           </StyledLi>
         </ul>
       </nav>

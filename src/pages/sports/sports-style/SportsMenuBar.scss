@@ -1,7 +1,8 @@
 .sports-menu-bar {
   width: 100%;
   height: 5vh;
-  background: rgb(237, 237, 237);
+  // background: rgb(237, 237, 237);
+  background: rgb(255, 226, 112);
   display: flex;
   justify-content: space-between;
 
@@ -14,6 +15,7 @@
     .sports-logo {
       width: 100%;
       height: 80%;
+      color: rgb(194, 194, 194);
     }
   }
 
@@ -25,7 +27,7 @@
     align-items: center;
     font-size: 1.5rem;
     font-weight: 800;
-    color: rgb(83, 149, 255);
+    color: rgb(255, 255, 255);
     margin-left: 3rem;
   }
 

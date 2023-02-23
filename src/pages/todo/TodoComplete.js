@@ -24,7 +24,7 @@ const TodoComplete = () => {
   return (
     <TodoCompleteZip>
       <TodoCompleteTitle>Complete</TodoCompleteTitle>
-      <CompleteZip></CompleteZip>
+      <CompleteZip>{/* 체크된 todo 가져오기 */}</CompleteZip>
     </TodoCompleteZip>
   );
 };
