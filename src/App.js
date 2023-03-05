@@ -2,8 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Menu from "./Menu";
 import Home from "./pages/Home";
 import Board from "./pages/board/Board";
-import Diary from "./pages/Diary";
+// import Diary from "./pages/Diary";
 import Bucket from "./pages/Bucket";
+import News from "./pages/news/News";
+import Map from "./pages/map/Map";
 import Todo from "./pages/todo/Todo";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -23,8 +25,10 @@ function App() {
             path="/toy-project/instagram-post"
             element={<Instagram name="guswjd" place="잠실" />}
           />
-          <Route path="/diary" element={<Diary />} />
+          {/* <Route path="/diary" element={<Diary />} /> */}
           <Route path="/bucket" element={<Bucket />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/map" element={<Map />} />
           <Route path="/toy-project/todo" element={<Todo />} />
           <Route path="/toy-project/sports-challenge/*" element={<Sports />} />
           <Route path="/question" element={<Board />} />

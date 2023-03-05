@@ -20,7 +20,7 @@ const MainBg = styled.div`
 const SportsHistory = ({ sportsRecord }) => {
   const showRecord = (record) => {
     return (
-      <div className="sports-record">
+      <div className="sports-record" key={record.id}>
         <p>{record.id}회차</p>
         <p>{record.count}개</p>
       </div>

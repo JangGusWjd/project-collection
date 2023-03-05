@@ -52,12 +52,14 @@ const Menu = () => {
               <StyledLink to="/toy-project">TOY PROJECT</StyledLink>
             </li>
             <li>
-              <StyledLink to="/diary">Diary</StyledLink>
-            </li>
-            <li>
               <StyledLink to="/bucket">Bucket List</StyledLink>
             </li>
-            <li>Todo List</li>
+            <li>
+              <StyledLink to="/news">News</StyledLink>
+            </li>
+            <li>
+              <StyledLink to="/map">Map</StyledLink>
+            </li>
             <li>
               <StyledLink to="/question">
                 <RiQuestionAnswerLine className="board-logo" />
