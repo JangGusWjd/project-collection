@@ -79,10 +79,11 @@ const Home = () => {
         <div className="profile-activity">
           <h2>ACTIVITY</h2>
           <ul>
-            <li>활동1</li>
-            <li>활동2</li>
-            <li>활동3</li>
-            <li>활동4</li>
+            <li>2020 단국대학교 소프트웨어학과 입학</li>
+            <li>2022 단국대학교 중앙동아리 Aegis 준회원</li>
+            <li>2022 프론트엔드 스터디장</li>
+            <li>2023 단국대학교 멋쟁이사자처럼 11기 운영진</li>
+            <li>2023 DEVOCEAN YOUNG 2기</li>
           </ul>
         </div>
       </div>
