@@ -1,8 +1,11 @@
 import { Link, Outlet } from "react-router-dom";
 import styled from "styled-components";
 import { IoLogoReact } from "react-icons/io5";
+import { AiOutlineMenu } from "react-icons/ai";
 import { RiQuestionAnswerLine } from "react-icons/ri";
+import { MdOutlineLogin } from "react-icons/md";
 import "./Menu.css";
+import { useState } from "react";
 
 const StyledLink = styled(Link)`
   color: rgb(179, 179, 179);
@@ -29,6 +32,7 @@ const BtnLink = styled(Link)`
     border-radius: 15px;
     color: rgb(179, 179, 179);
     font-weight: 600;
+    margin-left: 1.5rem;
   }
 
   button:hover {
@@ -39,9 +43,17 @@ const BtnLink = styled(Link)`
 `;
 
 const Menu = () => {
+  const [isToggled, setIsToggled] = useState(false);
+
   return (
     <div className="menu-bar">
       <header>
+        <AiOutlineMenu
+          className="toggle-button"
+          onClick={() => {
+            setIsToggled(!isToggled);
+          }}
+        />
         <IoLogoReact className="logo" />
         <div className="menu">
           <ul className="menu-list">
@@ -66,12 +78,83 @@ const Menu = () => {
               </StyledLink>
             </li>
           </ul>
+          <BtnLink to="/login">
+            <button className="login-button">Log In</button>
+          </BtnLink>
         </div>
 
-        <BtnLink to="/login">
-          <button>Log In</button>
-        </BtnLink>
+        <StyledLink to="/login">
+          <MdOutlineLogin className="toggle-login-button" />
+        </StyledLink>
       </header>
+      {isToggled ? (
+        <div className="toggle-menu-bar">
+          <ul className="toggleMenus">
+            <li className="toggle_menu">
+              <StyledLink
+                to="/"
+                onClick={() => {
+                  setIsToggled(!isToggled);
+                }}
+              >
+                HOME
+              </StyledLink>
+            </li>
+            <li className="toggle_menu">
+              <StyledLink
+                to="/toy-project"
+                onClick={() => {
+                  setIsToggled(!isToggled);
+                }}
+              >
+                TOY PROJECT
+              </StyledLink>
+            </li>
+            <li className="toggle_menu">
+              <StyledLink
+                to="/bucket"
+                onClick={() => {
+                  setIsToggled(!isToggled);
+                }}
+              >
+                BUCKET LIST
+              </StyledLink>
+            </li>
+            <li className="toggle_menu">
+              <StyledLink
+                to="/news"
+                onClick={() => {
+                  setIsToggled(!isToggled);
+                }}
+              >
+                NEWS
+              </StyledLink>
+            </li>
+            <li className="toggle_menu">
+              <StyledLink
+                to="/map"
+                onClick={() => {
+                  setIsToggled(!isToggled);
+                }}
+              >
+                MAP
+              </StyledLink>
+            </li>
+            <li className="toggle_menu">
+              <StyledLink
+                to="/question"
+                onClick={() => {
+                  setIsToggled(!isToggled);
+                }}
+              >
+                QNA
+              </StyledLink>
+            </li>
+          </ul>
+        </div>
+      ) : (
+        <></>
+      )}
       <Outlet />
     </div>
   );
