@@ -17,26 +17,28 @@
 
 // export default Map;
 
-import MapInsert from "./MapInsert";
+// import MapInsert from "./MapInsert";
 import MapShow from "./MapShow";
 import MapItem from "./MapItem";
-import "./styles/Map.scss";
+// import "./styles/Map.scss";
 import { useState } from "react";
 
 const Map = () => {
-  const [place, setPlace] = useState([
-    { id: 1, placeName: "네이버", position: 1111 },
-    { id: 2, placeName: "카카오", position: 1111 },
-    { id: 3, placeName: "라인", position: 1111 },
-    { id: 4, placeName: "쿠팡", position: 1111 },
-    { id: 5, placeName: "배민", position: 1111 },
-  ]);
+  // const [place, setPlace] = useState([
+  //   { id: 1, placeName: "네이버", position: 1111 },
+  //   { id: 2, placeName: "카카오", position: 1111 },
+  //   { id: 3, placeName: "라인", position: 1111 },
+  //   { id: 4, placeName: "쿠팡", position: 1111 },
+  //   { id: 5, placeName: "배민", position: 1111 },
+  // ]);
   return (
     <div className="Map-Container">
       <div>
         <h1>추억의 장소를 저장하세요.</h1>
       </div>
-      <MapInsert />
+      {/* <MapInsert /> */}
+      <button>네이버</button>
+      <button>카카오</button>
       <MapShow />
     </div>
   );
