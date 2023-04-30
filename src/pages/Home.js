@@ -8,6 +8,7 @@ const Home = () => {
       <div className="profile-container">
         <div className="profile-img">
           <img src="img/profile.jpg" alt="profile img" />
+          {/* <img src="img/emoji.png" alt="profile emoji" /> */}
         </div>
         <div className="profile-info">
           <h1>장현정</h1>
@@ -66,7 +67,7 @@ const Home = () => {
           </ul>
         </div>
         <div className="profile-awards">
-          <h2>AWARDS</h2>
+          {/* <h2>AWARDS</h2>
           <ul>
             <li>수상내역 1</li>
             <li>수상내역 2</li>
@@ -74,16 +75,34 @@ const Home = () => {
             <li>수상내역 4</li>
             <li>수상내역 5</li>
             <li>수상내역 6</li>
+          </ul> */}
+          <h2>#KEYWORD</h2>
+          <ul>
+            <li># ENFJ</li>
+            <li># 카페 알바</li>
+            <li># 맥북 구매</li>
+            <li># 군것질 러버, 빵순이</li>
+            <li># OTT, 유튜브</li>
           </ul>
         </div>
         <div className="profile-activity">
           <h2>ACTIVITY</h2>
           <ul>
-            <li>2020 단국대학교 소프트웨어학과 입학</li>
-            <li>2022 단국대학교 중앙동아리 Aegis 준회원</li>
-            <li>2022 프론트엔드 스터디장</li>
-            <li>2023 단국대학교 멋쟁이사자처럼 11기 운영진</li>
-            <li>2023 DEVOCEAN YOUNG 2기</li>
+            <li>
+              <span>2020.02</span> 단국대학교 소프트웨어학과 입학
+            </li>
+            <li>
+              <span>2022.03</span> 단국대학교 중앙동아리 Aegis Member
+            </li>
+            <li>
+              <span>2022.11</span> 프론트엔드 스터디장
+            </li>
+            <li>
+              <span>2023.02</span> 단국대학교 멋쟁이사자처럼 11기 운영진
+            </li>
+            <li>
+              <span>2023.03</span> SKT DEVOCEAN YOUNG 2기
+            </li>
           </ul>
         </div>
       </div>
